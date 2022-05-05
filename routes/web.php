@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BookingsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +14,26 @@ use App\Http\Controllers\LoginController;
 | contains the "web" middleware group. Now create something great!
 |
 */
- 
-Route::get('/login', [LoginController::class, 'index']);
+
+Route::get('/', function () {
+    return view('home');
+})->name("home");
+
+Route::get('/login', [LoginController::class, 'index'])
+    ->middleware('guest')
+    ->name('login.index');
+
+Route::post('/login', [LoginController::class, 'login'])
+    ->name('login.send');
+
+Route::get('/logout', [LoginController::class, 'destroy'])
+    ->middleware('auth')
+    ->name('login.destroy');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])
+->middleware('auth')
+->name('dashboard.index');
+
+Route::get('/bookings', [BookingsController::class, 'index'])
+->middleware('auth')
+->name('bookings.index');

@@ -6,6 +6,7 @@ use App\Models\Bookings;
 use App\Models\Seating_types;
 use App\Models\Flights_types;
 use App\Models\Regions;
+use App\Models\Countries;
 use Illuminate\Http\Request;
 use App\Models\Users;
 
@@ -21,8 +22,9 @@ class BookingsController extends Controller
         $flightsTypes = Flights_types::all();
         $seatingTypes = Seating_types::all();
         $regions = Regions::all();
+        $countries = Countries::all();
 
-        return view("bookings.bookings",compact('flightsTypes', 'seatingTypes','regions'));
+        return view("bookings.bookings",compact('flightsTypes', 'seatingTypes','regions','countries'));
     }
 
     /**

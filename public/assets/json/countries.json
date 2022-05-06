@@ -1,0 +1,184 @@
+{
+    "countries": [
+      {
+        "country": "Afghanistan",
+        "region_id": "1"
+      },
+      {
+        "country": "Bangladesh",
+        "region_id": "1"
+      },
+      {
+        "country": "Bután",
+        "region_id": "1"
+      },
+      {
+        "country": "Brunei",
+        "region_id": "1"
+      },
+      {
+        "country": "Kampuchea",
+        "region_id": "1"
+      },
+      {
+        "country": "R.P.D. de Corea",
+        "region_id": "1"
+      },
+      {
+        "country": "Timor Oriental",
+        "region_id": "1"
+      },
+      {
+        "country": "India",
+        "region_id": "1"
+      },
+      {
+        "country": "Indonesia",
+        "region_id": "1"
+      },
+      {
+        "country": "Japón",
+        "region_id": "1"
+      },
+      {
+        "country": "Laos",
+        "region_id": "1"
+      },
+      {
+        "country": "Malasia",
+        "region_id": "1"
+      },
+      {
+        "country": "Maldivas",
+        "region_id": "1"
+      },
+      {
+        "country": "Mongolia",
+        "region_id": "1"
+      },
+      {
+        "country": "Myanmar",
+        "region_id": "1"
+      },
+      {
+        "country": "Nepal",
+        "region_id": "1"
+      },
+      {
+        "country": "Pakistán",
+        "region_id": "1"
+      },
+      {
+        "country": "Filipinas",
+        "region_id": "1"
+      },
+      {
+        "country": "República de Corea",
+        "region_id": "1"
+      },
+      {
+        "country": "Singapur",
+        "region_id": "1"
+      },
+      {
+        "country": "Sri Lanka",
+        "region_id": "1"
+      },
+      {
+        "country": "Tailandia",
+        "region_id": "1"
+      },
+      {
+        "country": "Vietnam",
+        "region_id": "1"
+      },
+      {
+        "country": "Argelia",
+        "region_id": "2"
+      },
+      {
+        "country": "Bahrein",
+        "region_id": "2"
+      },
+      {
+        "country": "Egipto",
+        "region_id": "2"
+      },
+      {
+        "country": "Irán",
+        "region_id": "2"
+      },
+      {
+        "country": "Iraq",
+        "region_id": "2"
+      },
+      {
+        "country": "Israel",
+        "region_id": "2"
+      },
+      {
+        "country": "Jordania",
+        "region_id": "2"
+      },
+      {
+        "country": "Kuwait",
+        "region_id": "2"
+      },
+      {
+        "country": "Líbano",
+        "region_id": "2"
+      },
+      {
+        "country": "Libia",
+        "region_id": "2"
+      },
+      {
+        "country": "Mauritania",
+        "region_id": "2"
+      },
+      {
+        "country": "Marruecos",
+        "region_id": "2"
+      },
+      {
+        "country": "Omán",
+        "region_id": "2"
+      },
+      {
+        "country": "Palestina",
+        "region_id": "2"
+      },
+      {
+        "country": "Qatar",
+        "region_id": "2"
+      },
+      {
+        "country": "Arabia Saudita",
+        "region_id": "2"
+      },
+      {
+        "country": "Sudán",
+        "region_id": "2"
+      },
+      {
+        "country": "Siria",
+        "region_id": "2"
+      },
+      {
+        "country": "Túnez",
+        "region_id": "2"
+      },
+      {
+        "country": "Turquía",
+        "region_id": "2"
+      },
+      {
+        "country": "Emiratos Arabes Unidos",
+        "region_id": "2"
+      },
+      {
+        "country": "Yemen",
+        "region_id": "2"
+      }
+    ]
+}

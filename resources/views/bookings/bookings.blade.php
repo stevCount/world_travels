@@ -44,10 +44,22 @@
 
         <div class="row mt-5">
             <div class="col-md-6">
-                <label for="Seating" class="">Desde</label>
+                <label for="initialFlight" class="">Desde</label>
+                <select class="form-select" id="initialFlight">
+                    <option selected>Seleccione ...</option>
+                    @foreach ($countries as $country)
+                        <option value="{{ $country["id"] }}">{{ $country["country"] }} </option>
+                    @endforeach
+                </select>
             </div>
             <div class="col-md-6">
-                <label for="campo" class="">Hacia</label>
+                <label for="destinationFlight" class="">Hacia</label>
+                <select class="form-select" id="destinationFlight">
+                    <option selected>Seleccione ...</option>
+                    @foreach ($countries as $country)
+                        <option value="{{ $country["id"] }}">{{ $country["country"] }} </option>
+                    @endforeach
+                </select>
             </div>
         </div>
 
@@ -58,8 +70,13 @@
                 <input type="text" class="form-control" id="Seating" placeholder="Asiento" name="Seating">
             </div>
             <div class="col-md-6">
-                <label for="campo" class="">Tipo de asiento</label>
-                <input type="text" class="form-control" id="campo" placeholder="campo" name="campo" id="campo">
+                <label for="asentType" class="">Tipo de asiento</label>
+                <select class="form-select" id="asentType">
+                    <option selected>Seleccione ...</option>
+                    @foreach ($seatingTypes as $asent)
+                        <option value="{{ $asent["id"] }}">{{ $asent["name"] }} </option>
+                    @endforeach
+                </select>
             </div>
         </div>
 

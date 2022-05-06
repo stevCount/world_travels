@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class FlightsTypesSeeder extends Seeder
 {
@@ -13,6 +14,12 @@ class FlightsTypesSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $fligthsTypes = ["ida","ida y vuelta","vip","privados"];
+
+        foreach ($fligthsTypes as $value) {
+            DB::table('flights_types')->insert([
+                'name' => $value
+            ]);
+        }
     }
 }

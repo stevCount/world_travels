@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Bookings;
+use App\Models\Seating_types;
+use App\Models\Flights_types;
+use App\Models\Regions;
 use Illuminate\Http\Request;
+use App\Models\Users;
 
 class BookingsController extends Controller
 {
@@ -14,7 +18,11 @@ class BookingsController extends Controller
      */
     public function index()
     {
-        return view("bookings.bookings");
+        $flightsTypes = Flights_types::all();
+        $seatingTypes = Seating_types::all();
+        $regions = Regions::all();
+
+        return view("bookings.bookings",compact('flightsTypes', 'seatingTypes','regions'));
     }
 
     /**
@@ -81,5 +89,26 @@ class BookingsController extends Controller
     public function destroy(Bookings $bookings)
     {
         //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function saveBookingAction(Request $request)
+    {
+        $user = Users::select('id')->where('id', 1)->get();
+
+        dd($user);
+
+        $data = [
+            "data" => [
+                "seat" => "A3",
+                "seatType" => "",
+                "userId" => $userId
+            ]
+        ];
     }
 }

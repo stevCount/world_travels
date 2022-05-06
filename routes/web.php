@@ -37,3 +37,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
 Route::get('/bookings', [BookingsController::class, 'index'])
 ->middleware('auth')
 ->name('bookings.index');
+
+Route::get('/bookings/save', [BookingsController::class, 'saveBookingAction'])
+->middleware('auth')
+->name('bookings.save');

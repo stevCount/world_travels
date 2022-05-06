@@ -44,43 +44,62 @@
 
         <div class="row mt-5">
             <div class="col-md-6">
+                <label for="Seating" class="">Desde</label>
+            </div>
+            <div class="col-md-6">
+                <label for="campo" class="">Hacia</label>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-md-6">
                 <label for="Seating" class="">Asiento</label>
                 <input type="text" class="form-control" id="Seating" placeholder="Asiento" name="Seating">
             </div>
             <div class="col-md-6">
-                <label for="campo" class="">Campo</label>
+                <label for="campo" class="">Tipo de asiento</label>
                 <input type="text" class="form-control" id="campo" placeholder="campo" name="campo" id="campo">
             </div>
         </div>
 
         <div class="row mt-5">
             <div class="form-check check-me-travel">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Tengo usuario registrado.
+                <input class="form-check-input" type="checkbox" value="" id="checkUser">
+                <label class="form-check-label" for="checkUser">
+                  Quiero reservarlo con mi usuario.
                 </label>
             </div>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <label for="campo" class="">Campo</label>
-                <input type="text" class="form-control" id="campo" placeholder="campo" name="campo" id="campo">
+        <div class="userRow" id="userRow" style="">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <label for="Seating" class="">Nombres</label>
+                    <input type="text" class="form-control" id="firstNames" placeholder="Nombres" name="firstNames" required="required">
+                </div>
+                <div class="col-md-6">
+                    <label for="campo" class="">Apellidos</label>
+                    <input type="text" class="form-control" id="lastNames" placeholder="Apellidos" name="lastNames" id="lastNames">
+                </div>
             </div>
-            <div class="col-md-6">
-                <label for="campo" class="">Campo</label>
-                <input type="text" class="form-control" id="campo" placeholder="campo" name="campo" id="campo">
+
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <label for="Seating" class="">Correo</label>
+                    <input type="email" class="form-control" id="email" placeholder="Correo electronico" name="email" required="required">
+                </div>
+                <div class="col-md-6">
+                    <label for="campo" class="">Celular</label>
+                    <input type="text" class="form-control" id="mobileNumber" placeholder="Celular" name="mobileNumber" id="mobileNumber">
+                </div>
             </div>
         </div>
 
         <div class="row mt-5">
             <div class="col-md-6">
-                <label for="campo" class="">Campo</label>
-                <input type="text" class="form-control" id="campo" placeholder="campo" name="campo" id="campo">
-            </div>
-            <div class="col-md-6">
-                <label for="campo" class="">Campo</label>
-                <input type="text" class="form-control" id="campo" placeholder="campo" name="campo" id="campo">
+                <label for="campo" class="">Fecha Salida</label>
+                <input type="date" class="form-control" id="campo" placeholder="campo" name="campo" id="campo">
             </div>
         </div>
 
